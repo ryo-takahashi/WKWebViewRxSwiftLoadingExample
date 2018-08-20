@@ -13,6 +13,8 @@
 		5A01D474212AF63E00978D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A01D473212AF63E00978D7E /* Assets.xcassets */; };
 		5A01D477212AF63E00978D7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A01D475212AF63E00978D7E /* LaunchScreen.storyboard */; };
 		5A01D481212AFDF200978D7E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A01D480212AFDF200978D7E /* ViewController.xib */; };
+		5A01D483212B007700978D7E /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A01D482212B007700978D7E /* WKWebViewController.swift */; };
+		5A01D485212B009500978D7E /* WKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A01D484212B009500978D7E /* WKWebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5A01D476212AF63E00978D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A01D478212AF63E00978D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A01D480212AFDF200978D7E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		5A01D482212B007700978D7E /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		5A01D484212B009500978D7E /* WKWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WKWebViewController.xib; sourceTree = "<group>"; };
 		C1422EFC6823F41234B773D0 /* Pods-WKWebViewRxSwiftLoadingExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewRxSwiftLoadingExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebViewRxSwiftLoadingExample/Pods-WKWebViewRxSwiftLoadingExample.debug.xcconfig"; sourceTree = "<group>"; };
 		DA1F0E47754A63AED24208D5 /* Pods-WKWebViewRxSwiftLoadingExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewRxSwiftLoadingExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebViewRxSwiftLoadingExample/Pods-WKWebViewRxSwiftLoadingExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +87,7 @@
 				5A01D473212AF63E00978D7E /* Assets.xcassets */,
 				5A01D475212AF63E00978D7E /* LaunchScreen.storyboard */,
 				5A01D480212AFDF200978D7E /* ViewController.xib */,
+				5A01D484212B009500978D7E /* WKWebViewController.xib */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -92,6 +97,7 @@
 			children = (
 				5A01D46C212AF63D00978D7E /* AppDelegate.swift */,
 				5A01D46E212AF63D00978D7E /* ViewController.swift */,
+				5A01D482212B007700978D7E /* WKWebViewController.swift */,
 			);
 			path = sources;
 			sourceTree = "<group>";
@@ -167,6 +173,7 @@
 				5A01D477212AF63E00978D7E /* LaunchScreen.storyboard in Resources */,
 				5A01D481212AFDF200978D7E /* ViewController.xib in Resources */,
 				5A01D474212AF63E00978D7E /* Assets.xcassets in Resources */,
+				5A01D485212B009500978D7E /* WKWebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A01D483212B007700978D7E /* WKWebViewController.swift in Sources */,
 				5A01D46F212AF63D00978D7E /* ViewController.swift in Sources */,
 				5A01D46D212AF63D00978D7E /* AppDelegate.swift in Sources */,
 			);
