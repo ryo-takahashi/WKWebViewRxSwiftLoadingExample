@@ -10,9 +10,9 @@
 		23E83CA5411AA4860BF2DDD3 /* Pods_WKWebViewRxSwiftLoadingExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119D3AF5AEB982C6990E32D8 /* Pods_WKWebViewRxSwiftLoadingExample.framework */; };
 		5A01D46D212AF63D00978D7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A01D46C212AF63D00978D7E /* AppDelegate.swift */; };
 		5A01D46F212AF63D00978D7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A01D46E212AF63D00978D7E /* ViewController.swift */; };
-		5A01D472212AF63D00978D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A01D470212AF63D00978D7E /* Main.storyboard */; };
 		5A01D474212AF63E00978D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A01D473212AF63E00978D7E /* Assets.xcassets */; };
 		5A01D477212AF63E00978D7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A01D475212AF63E00978D7E /* LaunchScreen.storyboard */; };
+		5A01D481212AFDF200978D7E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A01D480212AFDF200978D7E /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		5A01D469212AF63D00978D7E /* WKWebViewRxSwiftLoadingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebViewRxSwiftLoadingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A01D46C212AF63D00978D7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A01D46E212AF63D00978D7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5A01D471212AF63D00978D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A01D473212AF63E00978D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A01D476212AF63E00978D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A01D478212AF63E00978D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A01D480212AFDF200978D7E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		C1422EFC6823F41234B773D0 /* Pods-WKWebViewRxSwiftLoadingExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewRxSwiftLoadingExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebViewRxSwiftLoadingExample/Pods-WKWebViewRxSwiftLoadingExample.debug.xcconfig"; sourceTree = "<group>"; };
 		DA1F0E47754A63AED24208D5 /* Pods-WKWebViewRxSwiftLoadingExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewRxSwiftLoadingExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebViewRxSwiftLoadingExample/Pods-WKWebViewRxSwiftLoadingExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,14 +70,30 @@
 		5A01D46B212AF63D00978D7E /* WKWebViewRxSwiftLoadingExample */ = {
 			isa = PBXGroup;
 			children = (
-				5A01D46C212AF63D00978D7E /* AppDelegate.swift */,
-				5A01D46E212AF63D00978D7E /* ViewController.swift */,
-				5A01D470212AF63D00978D7E /* Main.storyboard */,
-				5A01D473212AF63E00978D7E /* Assets.xcassets */,
-				5A01D475212AF63E00978D7E /* LaunchScreen.storyboard */,
+				5A01D47F212AF8C700978D7E /* sources */,
+				5A01D47E212AF8BA00978D7E /* resources */,
 				5A01D478212AF63E00978D7E /* Info.plist */,
 			);
 			path = WKWebViewRxSwiftLoadingExample;
+			sourceTree = "<group>";
+		};
+		5A01D47E212AF8BA00978D7E /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A01D473212AF63E00978D7E /* Assets.xcassets */,
+				5A01D475212AF63E00978D7E /* LaunchScreen.storyboard */,
+				5A01D480212AFDF200978D7E /* ViewController.xib */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		5A01D47F212AF8C700978D7E /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				5A01D46C212AF63D00978D7E /* AppDelegate.swift */,
+				5A01D46E212AF63D00978D7E /* ViewController.swift */,
+			);
+			path = sources;
 			sourceTree = "<group>";
 		};
 		D65E36F6590E42245CD7347C /* Frameworks */ = {
@@ -149,8 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A01D477212AF63E00978D7E /* LaunchScreen.storyboard in Resources */,
+				5A01D481212AFDF200978D7E /* ViewController.xib in Resources */,
 				5A01D474212AF63E00978D7E /* Assets.xcassets in Resources */,
-				5A01D472212AF63D00978D7E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,14 +226,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5A01D470212AF63D00978D7E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A01D471212AF63D00978D7E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5A01D475212AF63E00978D7E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -351,7 +359,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9PHSZKL64F;
 				INFOPLIST_FILE = WKWebViewRxSwiftLoadingExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.k0uhashi.WKWebViewRxSwiftLoadingExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -367,7 +378,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9PHSZKL64F;
 				INFOPLIST_FILE = WKWebViewRxSwiftLoadingExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.k0uhashi.WKWebViewRxSwiftLoadingExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
