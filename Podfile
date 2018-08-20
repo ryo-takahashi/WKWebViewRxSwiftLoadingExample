@@ -5,4 +5,6 @@ target 'WKWebViewRxSwiftLoadingExample' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxOptional'
+  pod 'RxWebKit'
 end

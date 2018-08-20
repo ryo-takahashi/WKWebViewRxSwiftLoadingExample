@@ -20,9 +20,19 @@ class ViewController: UIViewController {
                 self?.presentWebViewController()
             })
             .disposed(by: disposeBag)
+        
+        presentRxLoadingWebViewControllerButton.rx.tap
+            .subscribe(onNext: { [weak self] in
+                self?.presentRxWebViewController()
+            })
+            .disposed(by: disposeBag)
     }
     
     private func presentWebViewController() {
         navigationController?.pushViewController(WKWebViewController(), animated: true)
+    }
+    
+    private func presentRxWebViewController() {
+        navigationController?.pushViewController(RxWKWebViewController(), animated: true)
     }
 }
