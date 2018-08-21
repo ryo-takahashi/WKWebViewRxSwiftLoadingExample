@@ -6,6 +6,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var presentObserverLoadingWebViewControllerButton: UIButton!
     @IBOutlet weak var presentRxLoadingWebViewControllerButton: UIButton!
+    @IBOutlet weak var presentRxWebkitControllerButton: UIButton!
     
     private let disposeBag = DisposeBag()
     
@@ -26,6 +27,13 @@ class ViewController: UIViewController {
                 self?.presentRxWebViewController()
             })
             .disposed(by: disposeBag)
+        
+        presentRxWebkitControllerButton.rx.tap
+            .subscribe(onNext: { [weak self] in
+                self?.pushRxWebkitViewController()
+            })
+            .disposed(by: disposeBag)
+        
     }
     
     private func presentWebViewController() {
@@ -35,4 +43,9 @@ class ViewController: UIViewController {
     private func presentRxWebViewController() {
         navigationController?.pushViewController(RxWKWebViewController(), animated: true)
     }
+    
+    private func pushRxWebkitViewController() {
+        navigationController?.pushViewController(RxWebkitViewController(), animated: true)
+    }
+    
 }

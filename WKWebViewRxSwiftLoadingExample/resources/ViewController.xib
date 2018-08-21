@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="presentObserverLoadingWebViewControllerButton" destination="6oa-vH-slU" id="rmU-vS-bvC"/>
                 <outlet property="presentRxLoadingWebViewControllerButton" destination="i7j-jc-kNm" id="hdG-L1-98u"/>
+                <outlet property="presentRxWebkitControllerButton" destination="u6w-7w-9kC" id="sFB-Ey-vbj"/>
                 <outlet property="view" destination="iN0-l3-epB" id="bLW-sm-Pf4"/>
             </connections>
         </placeholder>
@@ -30,12 +31,18 @@
                     <rect key="frame" x="109.5" y="348.5" width="156" height="30"/>
                     <state key="normal" title="Swift Observer version"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6w-7w-9kC">
+                    <rect key="frame" x="129" y="228.5" width="118" height="30"/>
+                    <state key="normal" title="RxWebkit version"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="i7j-jc-kNm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-30" id="Agw-Bz-xgU"/>
                 <constraint firstItem="i7j-jc-kNm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ca1-Md-y4b"/>
+                <constraint firstItem="u6w-7w-9kC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="G34-m1-7pL"/>
                 <constraint firstItem="6oa-vH-slU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="30" id="NbZ-ZD-9xt"/>
+                <constraint firstItem="u6w-7w-9kC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-90" id="fUi-dd-ANa"/>
                 <constraint firstItem="6oa-vH-slU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iYg-b3-TqF"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
